@@ -1,0 +1,19 @@
+What is the DOM? it's an acronym for Document Object Model. It's a model of the web that represents the structure of a web page in this case with HTML.The DOM has a tree like structure in which is represented a relationship between the HTML elements including parent-child relationships.
+
+What is the difference between Imperative vs Declarative Programming - Think about the difference between step-by-step instructions on how to make a pizza vs just ordering a pizza.
+Basically Imperative Programing is when you are telling how to do something, and you are giving instructions and all the necessary steps to do it. Whereas Declarative Programming is whe you are only asking what you want to receive without asking the steps nor the instructions on how to get it.
+
+What is JSX - the syntax extension for JavaScript?
+Basically JSX is a syntax extension for JavaScript that allows you to write HTML-like code within your JavaScript code. It's a way to embed HTML directly into your JavaScript code, making it easier to work with HTML elements and their attributes.
+
+What is the Babel interpreter?
+Babel is a toolchain that is mainly used to convert ECMAScript 2015+ code into a backwards compatible version of JavaScript in current and older browsers or environments. Here are the main things Babel can do for you:
+
+Transform syntax
+Polyfill features that are missing in your target environment (through a third-party polyfill such as core-js)
+Source code transformations (codemods)
+And more! (check out these videos for inspiration)
+
+btw we can think of props in React as the attributes of a HTML element.
+Note: In React, data flows down the component tree. This is referred to as one-way data flow. State, which will be discussed in the next chapter, can be passed from parent to child components as props.
+Props can be passed to components similarly to HTML attributes, but you can pass any JavaScript value through them, including objects and functions.
