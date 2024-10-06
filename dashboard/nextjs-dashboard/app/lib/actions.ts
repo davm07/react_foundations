@@ -21,6 +21,8 @@ const FormSchema = z.object({
     date: z.string()
 })
 
+const CreateInvoice = FormSchema.omit({id: true, date: true});
+
 export type State = {
   errors?: {
     customerId?: string[];
@@ -29,9 +31,6 @@ export type State = {
   };
   message?: string | null;
 };
-
-
-const CreateInvoice = FormSchema.omit({id: true, date: true});
 
 export async function createInvoice(prevState: State, formData: FormData) {
     const validatedFields = CreateInvoice.safeParse({
@@ -128,5 +127,7 @@ export async function authenticate(
           return 'Something went wrong';
       }
     }
+
+    throw error;
   }
 }
